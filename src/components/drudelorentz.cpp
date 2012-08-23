@@ -503,7 +503,7 @@ double DrudeLorentz::Pefl(double theta,double thetaE,double v,double beta,std::c
     const std::complex<double> C=-(cosdesq*tanhterm/Lplus+sindesq*cothterm/Lmin)*lambda0*lambda*thetaEsq*pow(betasq,2.0);
     std::complex<double> cyefl=term1+prefact2*(A+B+C);
 
-    if (_isnan(cyefl.imag())){
+    if (isnan(cyefl.imag())){
         cyefl.imag()=0.0;
     }
 
