@@ -1,0 +1,1 @@
+qmake -project -r CONFIG+=exceptions CONFIG+=rtti QMAKE_CXXFLAGS_RELEASE-=-fno-exceptions LIBS+=-lfftw3 LIBS+=-lgsl LIBS+=-lgslcblas INCLUDEPATH+=/usr/include/atlas/ INCLUDEPATH+=src/ -o eelsmodel.pro
