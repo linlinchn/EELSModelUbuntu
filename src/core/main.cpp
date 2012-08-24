@@ -16,7 +16,7 @@
  ***************************************************************************/
 
 #include "src/core/eelsmodel.h"
-#include <qapplication.h>
+#include <QApplication>
 #include <iostream>
 #include "src/gui/menu.h"
 #include <qworkspace.h>
@@ -27,7 +27,7 @@
 #include <qtranslator.h>
 #include "src/gui/hello.h"
 #include "src/core/curvematrix.h"
-#include <QWindowsXPStyle>
+//#include <QWindowsXPStyle>
 
 
 //#include <gsl/gsl_linalg.h> //for matrixtest to compare with gsl
@@ -493,7 +493,8 @@ int main(int argc, char *argv[])
     testmatrix();
 
     QApplication a( argc, argv );
-    a.setStyle(new QWindowsXPStyle);//determines the style of the whole app
+    QApplication::setStyle("cleanlooks");
+//    a.setStyle(new QWindowsXPStyle);//determines the style of the whole app
 
     //QTranslator tor( 0 );
 
