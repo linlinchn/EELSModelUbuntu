@@ -19,9 +19,9 @@
  *                                                                         *
  ***************************************************************************/
 
+#include <cstdio>
 #include "src/fitters/mlfitter_gsl.h"
 #include "src/core/model.h"
-//#include <cstdio>
 #include "src/core/monitor.h"
 //#define COPYING //do this only if the fast pointer way of working seems to create problems
 
