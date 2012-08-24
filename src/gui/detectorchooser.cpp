@@ -24,7 +24,7 @@ This widget lets the user choose between different detectors that are stored in 
 #include "src/core/model.h"
 #include "saysomething.h"
 #include <fstream>
-#include <qapplication>
+#include <QApplication>
 
 
 
