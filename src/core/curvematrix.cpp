@@ -340,15 +340,15 @@ void CurveMatrix::inv_inplace_ATLAS(){
     //a fast implementation using ATLAS
     //this may crash if the library is not found or if it is compiled for the wrong machine in that case revert to the old and slow implementation
     //ipiv already has the size of M
-    if (!square()) throw CurveMatrixerr::not_square();
-try{
-        atlas::lu_factor (M, ipiv);  // alias for getrf()
-        atlas::lu_invert (M, ipiv);  // alias for getri()
-    }
-    catch(...){
-        std::cout <<"inv_inplace_ATLAS failed....reverting to slower native implementation, check existence of ATLAS library!\n";
+//    if (!square()) throw CurveMatrixerr::not_square();
+//try{
+//        atlas::lu_factor (M, ipiv);  // alias for getrf()
+//        atlas::lu_invert (M, ipiv);  // alias for getri()
+//    }
+//    catch(...){
+//        std::cout <<"inv_inplace_ATLAS failed....reverting to slower native implementation, check existence of ATLAS library!\n";
         inv_inplace_slow();
-    }
+//    }
 }
 
 void CurveMatrix::QRdecomp(CurveMatrix& Q,CurveMatrix& R)const{
