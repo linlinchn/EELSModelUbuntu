@@ -1,0 +1,3 @@
+Change the icons to some system standard.
+Figure out why the inv_inplace_ATLAS function didn't work properly.
+Pack it in a .deb file for easy installation.
