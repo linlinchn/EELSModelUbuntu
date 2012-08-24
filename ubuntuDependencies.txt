@@ -1,0 +1,6 @@
+libatlas-dev
+liblapack-dev
+qt4-dev-tools
+libfftw3-dev
+libgsl0-dev
+libboost-all-dev ## probably don't need of the them, but I just downloaded all
