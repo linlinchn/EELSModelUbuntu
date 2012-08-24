@@ -17,7 +17,7 @@ simulates an infinite self convolution
  *                                                                         *
  ***************************************************************************/
 
-#include "src/components/MscatterExpfft.h"
+#include "src/components/mscatterexpfft.h"
 #include "src/core/parameter.h"
 #include <cmath>
 #include <iostream>
